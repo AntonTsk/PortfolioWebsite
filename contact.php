@@ -2,8 +2,8 @@
 
 //settings
 $name = $_REQUEST['c_name'];
-$email = $_REQUEST['c_email']
-$message = $_REQUEST['c_message']
+$email = $_REQUEST['c_email'];
+$message = $_REQUEST['c_message'];
 
 //check input filds
 if(empty($name) || empty($email) || empty($message))
