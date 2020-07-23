@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Anton's Portfolio</div>
+         <ul class="nav-links">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#contact">Contact</a></li>
+             
+         </ul>
+         <div class="burger">
+             <div class = "line1"></div>
+             <div class = "line2"></div>
+             <div class = "line3"></div>
+         </div>
+    </nav>
+
+    
+    
+    <div class="banner-area" id="home"> 
+        <div class="text-part">
+        <h1>Hi,</h1>
+        <h1>I'm Anton,</h1>
+        <h1>Software Engineer.</h1>   
+        </div>
+    </div>
+
+    
+    <div class="about-area" id="about"> 
+        <div class="text-part">
+            <h1>About</h1>
+            <p>
+              I want to make life easier for people around the world with new technologies and inventions.
+           </p>
+        </div>
+    </div>
+
+    <div class="projects-area" id="projects">
+        <div class="text-part">
+                <h1>Projects</h1>
+                <section class="portfolio">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                    <img src="images/images.png" alt="">
+                </section>
+        </div>
+    </div>
+
+
+    <div class="contact-area" id="contact">
+        
+        <div class="text-part">
+			<h1>Contact</h1>		
+		    <p>
+				No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+            </p>
+
+            <form  class="contact-form" action="contact.php">
+            
+	        	<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+	        	<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+	        	<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+	        	<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+
+            </form>
+	    </div>
+    </div>
+    
+    <footer>
+        <p>Anton &copy; 2020</p>
+    </footer>
+
+     <script src = "app.js"></script>
+</body>
+
+</html>

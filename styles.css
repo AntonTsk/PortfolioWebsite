@@ -1,0 +1,276 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+    background: linear-gradient(36deg, #5b00ee, #d9ff00);
+    background-size: 400% 400%;
+    animation: gradient 19s  infinite linear;
+    min-height: 100%;
+}
+
+
+p{
+    font-size: 24px;
+    line-height: 50px;
+}
+h1{
+   font-size: 50px; 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    }
+
+    
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(97, 8, 240);
+
+}
+
+.logo{
+    color: rgb(236, 235, 235);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.nav-links li{
+    list-style: none; /*Remove bullet points*/
+}
+.nav-links a{
+    color: rgb(236, 235, 235);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(236, 235, 235);
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+       overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh; 
+        top: 6vh;
+        background-color: rgb(97, 8, 240);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+.about-area h1{
+    
+    width: 65%;;
+    font-size: 75px;
+    z-index: 0;
+    opacity: .1;
+    position: center;
+    }
+
+.projects-area h1{
+    
+        width: 65%;;
+        font-size: 75px;
+        z-index: 0;
+        opacity: .1;
+        position: center;
+     }
+    
+
+.work-area h1{
+    
+        width: 65%;;
+        font-size: 75px;
+        z-index: 0;
+        opacity: .1;
+        position: center;
+     }
+    
+
+.contact-area h1{
+    
+        width: 65%;;
+        font-size: 75px;
+        z-index: 0;
+        opacity: .1;
+        position: center;
+     }
+    
+
+
+
+a:hover{
+    color: rgb(255, 0, 0); /*color when cursor is over nav=links*/
+}
+
+.banner-area{
+    position: relative;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    color: rgb(236, 235, 235);  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+.banner-area h1{
+    
+    position: relative;
+    display: flex;
+    transform: translateY(100px);
+    
+}
+
+.about-area, .projects-area, .work-area, .contact-area{
+    color: rgb(236, 235, 235);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+
+    
+}
+
+.text-part{
+    width: 65%;
+    height: 80%;
+
+}
+
+
+
+
+
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+  }
+
+
+
+
+
+
+
+
+.contact-form{
+  width: 80%;
+  
+}
+
+
+.contact-form input, textarea, button
+{
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+footer {
+    
+    background-color: rgb(97, 8, 240);
+    text-align: center;
+    
+  
+  }
