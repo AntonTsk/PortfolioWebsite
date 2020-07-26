@@ -143,45 +143,11 @@ nav{
 
 
 
-.about-area h1{
-    
-    width: 65%;;
+h1{
     font-size: 75px;
-    z-index: 0;
-    opacity: .1;
-    position: center;
+
     }
 
-.projects-area h1{
-    
-        width: 65%;;
-        font-size: 75px;
-        z-index: 0;
-        opacity: .1;
-        position: center;
-     }
-    
-
-.work-area h1{
-    
-        width: 65%;;
-        font-size: 75px;
-        z-index: 0;
-        opacity: .1;
-        position: center;
-     }
-    
-
-.contact-area h1{
-
-        
-        width: 65%;;
-        font-size: 75px;
-        z-index: 0;
-        opacity: .1;
-        position: center;
-     }
-    
 
 
 
@@ -225,9 +191,10 @@ a:hover{
 
 
 .banner-area h1{
-   
+    font-size: 50px;
     position: relative;
     display: flex;
+    color: #fff;
     
     
 }
@@ -292,18 +259,17 @@ a:hover{
 
 
 
-
-
-
 .portfolio {
-    display: grid;
-    grid-gap: 30px;
+    display: grid; 
+    grid-gap: 150px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .card {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
+
+    
     position: relative;
     perspective: 1000px;
 
@@ -319,7 +285,7 @@ a:hover{
     align-items: center;
     transition: 1s;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 10%;
   }
   .front {
     background-color: rgb(255, 0, 0);

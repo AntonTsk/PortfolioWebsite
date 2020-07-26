@@ -24,3 +24,8 @@ const navSlide = () => {
 }
 navSlide();
 
+function getRedirect() {
+
+    var win = window.open('https://github.com/TonyTskh', '_blank');
+    win.focus();
+}
