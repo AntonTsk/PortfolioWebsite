@@ -24,8 +24,12 @@ const navSlide = () => {
 }
 navSlide();
 
-function getRedirect() {
-
-    var win = window.open('https://github.com/TonyTskh', '_blank');
+function getRedirect(id) {
+    var links = {
+        "github": "https://github.com/TonyTskh",
+        "linkedin": "https://www.linkedin.com/in/anton-tsk-109a491a8/",
+        "google": "mailto:anton.tsk1@gmail.com"
+      };
+    var win = window.open(links[id], '_blank');
     win.focus();
 }
