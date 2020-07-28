@@ -39,4 +39,3 @@ function getRedirect(id) {
     var win = window.open(links[id], '_blank');
     win.focus();
 }
-

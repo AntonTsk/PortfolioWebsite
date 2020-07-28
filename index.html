@@ -11,6 +11,8 @@
     <title>Welcome</title>
 </head>
 <body>
+  <div id = "progressbar"></div>
+  <div id = "scrollPath"></div>
     <nav>
         <div class="logo">Anton's Portfolio</div>
          <ul class="nav-links">
@@ -143,7 +145,7 @@
 	
 	        	<input type="email" id="c_email" class="form-control" name="_replyto" placeholder="Your e-mail">
 	        	<textarea class="form-control" id="c_message" name="message" rows="7" placeholder="Message"></textarea>
-	        	<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+	        	<button type="submit" class="b" data-wow-delay=".3s">Send Message</button>
             <label>  
 
 	    </div>
@@ -152,6 +154,15 @@
    
 
      <script src = "app.js"></script>
+     <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+    let progressHeight = (window.pageYOffset/totalHeight)*110;
+    progress.style.height = progressHeight + "%";
+}
+
+     </script>
 </body>
 
 </html>
