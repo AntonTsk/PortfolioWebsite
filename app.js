@@ -28,8 +28,15 @@ function getRedirect(id) {
     var links = {
         "github": "https://github.com/TonyTskh",
         "linkedin": "https://www.linkedin.com/in/anton-tsk-109a491a8/",
-        "google": "mailto:anton.tsk1@gmail.com"
+        "google": "mailto:anton.tsk1@gmail.com",
+        "pj1demo": "https://repl.it/@tonytskh/Sorting-Visualization",
+        "pj1code": "https://github.com/TonyTskh/Sorting-Visualization-v2",
+        "pj2demo": "https://simmer.io/@AntonTsk/flappy-neon",
+        "pj2code": "https://github.com/TonyTskh/FlappyNeon",
+        "pj3demo": "https://github.com/TonyTskh/Numerical-integration/blob/master/Numerical%20methods%20ENG.pdf",
+        "pj3code": "https://github.com/TonyTskh/Numerical-integration",
       };
     var win = window.open(links[id], '_blank');
     win.focus();
 }
+

@@ -3,24 +3,16 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Signika', sans-serif;
-    background: gray;
+    background: linear-gradient(36deg,rgb(39, 0, 66),#182848)
+    
+
+
 }
 
 
-p{
-    font-size: 24px;
-    line-height: 50px;
-}
-h1{
-   font-size: 75px; 
-}
 html{
     scroll-behavior: smooth;
 }
-
-
-
-    
 nav{
     display: flex;
     justify-content: space-around;
@@ -30,7 +22,6 @@ nav{
     background-color: rgb(97, 8, 240);
 
 }
-
 .logo{
     color: rgb(236, 235, 235);
     text-transform: uppercase;
@@ -128,9 +119,8 @@ nav{
 
 
 a:hover{
-    color: rgb(255, 0, 0); /*color when cursor is over nav=links*/
+    color: rgb(255, 238, 0); 
 }
-
 
 
 .about-area, .projects-area, .work-area, .contact-area, .skills-area{
@@ -142,7 +132,19 @@ a:hover{
     flex-direction: row;
     width: 100%;
     height: 100%;
+}
 
+
+
+
+#header {
+    font-size: 75px;
+    color: honeydew;
+}
+#text-content{
+    font-size: 25px;
+    color: honeydew;
+    font-family: 'Roboto Mono';
 }
 
 .text-part{
@@ -151,46 +153,36 @@ a:hover{
 
 }
 
-
+  
 
 .banner-area{
-    background-color: indigo;
-    position: relative;
+
+    position: flex;
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-   
-    
+    align-items: center;  
 }
 
 
+
 .banner-area h1{
+    
     font-size: 50px;
     position: relative;
     display: flex;
     color: #fff;
-    
-    
 }
 
 
-
-
-
-
 .container {
-    
-    
     display: flex;
-    
-    align-items: center;
-  }
-  .social {
 
+  }
+
+  .social {
+   
     color: #fff;
     list-style: none;
     padding: 0;
@@ -198,7 +190,9 @@ a:hover{
     justify-content: space-between;
     width: 400px;
   }
+
   .social__item {
+    
     width: 40px;
     height: 40px;
     border-radius: 30%;
@@ -208,8 +202,6 @@ a:hover{
     align-items: center;
     font-size: 25px;
     transition: all 0.3s;
-  }
-  .social__item {
     cursor: pointer;
   }
   
@@ -224,12 +216,12 @@ a:hover{
     box-shadow: 0px 0px 20px #bc2a8d;
     color: #bc2a8d;
   }
+
   .google:hover {
     border-color: #dd4b39;
     box-shadow: 0px 0px 20px #dd4b39;
     color: #dd4b39;
   }
-  
 
 
 
@@ -246,7 +238,7 @@ a:hover{
 
   .card {
     width: 350px;
-    height: 250px;
+    height: 400px;
     position: relative;
     perspective: 1000px;
 
@@ -263,7 +255,7 @@ a:hover{
     transition: 1s;
     backface-visibility: hidden;
     border-radius: 10%;
-  }
+  } 
   .front {
     background-color:indigo;
   }
@@ -276,12 +268,160 @@ a:hover{
 
 
 
+#pj1 .front{
+    background-image: url(images/sorting.jpg);
+    background-size: cover;
+    width: 100%;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: start;
+    border-color: #eddd00;
+    box-shadow: 0px 0px 20px #ede900;
+    
+    
+}
+
+#pj1 .back {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    border-color: #eddd00;
+    box-shadow: 0px 0px 20px #ede900;
+    
+}
+
+#pj1 .back p{
+    width: 80%;
+    text-align:center;
+    font-family: 'Roboto Mono';
+    
+}
+
+
+ 
+
+
+
+#pj2 .front{
+    background-image: url(images/flappyneon.jpg);
+    background-size: cover;
+    width: 100%;
+    font-size: 20px;  
+    flex-direction: column;
+    justify-content: start;
+    border-color: indigo;
+    box-shadow: 0px 0px 20px indigo;
+}
+
+#pj2 .back {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    border-color: indigo;
+    box-shadow: 0px 0px 20px indigo;
+    background-color: indigo;
+    color: white;
+}
+
+#pj2 .back p{
+    width: 80%;
+    text-align:center;
+    margin: 30px;
+    font-family: 'Roboto Mono';
+
+}
+
+#pj2 .back h1{
+   
+    margin: 0;
+}
+
+
+#pj3 .front{
+    background-image: url(images/math.jpg); 
+    background-size: cover;
+    width: 100%;
+    font-size: 20px;  
+    flex-direction: column;
+    justify-content: start;
+    border-color: silver;
+    box-shadow: 0px 0px 20px silver;
+    color: white;
+    
+}
+#pj3 .front h1{
+    
+    text-align: center;
+}
+#pj3 .back {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    border-color: rgb(64, 64, 90);
+    box-shadow: 0px 0px 20px  rgb(64, 64, 90);
+    background-color: rgb(64, 64, 90);
+    color: white;
+}
+
+#pj3 .back p{
+    width: 80%;
+    text-align:center;
+    margin: 30px;
+    font-family: 'Roboto Mono';
+
+}
 
 
 
 
 
 
+.buttonpj{
+    width: 100px;
+    text-align:center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: coral;
+   
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .buttonpj:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  .buttonpj:hover:before {
+    animation: move-light 0.5s;
+  }
+  
+  @keyframes move-light {
+    from {
+      transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+      transform: translateX(10em) skewX(-45deg);
+    }
+  }
+  
+
+
+
+
+.contact-area{
+    height: 100vh;
+    flex-direction: row;
+}
 
 
 .contact-form 

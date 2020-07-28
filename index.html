@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
     
     
     <div class="banner-area" id="home"> 
-        <div class="text-part">
+        <div class="text-part" id  = "bgarea">
           <h1>Hi,</h1>
           <h1>I'm Anton,</h1>
           <h1>Software Engineer.</h1>   
@@ -60,51 +61,63 @@
     
     <div class="about-area" id="about"> 
         <div class="text-part">
-            <h1>About</h1>
-            <p>
+            <h1 id = "header">About</h1>
+            <p id ="text-content">
               I want to make life easier for people around the world with new technologies and inventions.
            </p>
         </div>
     </div>
 
-
-  <div class="skills-area" id="skills"> 
-      <div class="text-part">
-          <h1>Skills</h1>
-          <p>
-            I want to make life easier for people around the world with new technologies and inventions.
-         </p>
-      </div>
-  </div>
-
     <div class="projects-area" id="projects">
         <div class="text-part">
-                <h1>Projects</h1>
+                <h1 id = "header">Projects</h1>
                 <section class="portfolio">
                 
                
-                   <div class="card">
-                      <div class="front"><span>Front</span></div>
-                      <div class="back"><span>Back</span></div>
+                   <div class="card" id = "pj1">
+                      <div class="front">
+                        <h1>Sorting Visualization</h1>
+                      </div>
+
+                      <div class="back">
+                        <h1>Sorting Visualization</h1>
+                        <p>Visualization of popular sorting algorithms.The project was created to visually show the operation of sorting algorithms, to compare the speed of the algorithms with large arrays. </p>
+                        <a class="buttonpj"id = 'pj1demo' onclick="getRedirect(this.id)">View Demo</a>
+                        <a class="buttonpj"id = 'pj1code' onclick="getRedirect(this.id)">View Code</a>
+                      </div>
                     </div>
           
                
-                   <div class="card">
-                      <div class="front"><span>Front</span></div>
-                      <div class="back"><span>Back</span></div>
+                    <div class="card" id = "pj2">
+                      <div class="front">
+                      </div>
+
+                      <div class="back">
+                        <h1>Mobile Game </h1><h1>"Flappy Neon"</h1>
+                        <p>Thanks to this project, I learned the basics of developing games on unity, faced with problems of optimization and product testing.</p>
+                        <a class="buttonpj"id = 'pj2demo' onclick="getRedirect(this.id)">View Demo</a>
+                        <a class="buttonpj"id = 'pj2code' onclick="getRedirect(this.id)">View Code</a>
+                      </div>
                     </div>
                    
                
-                   <div class="card">
-                      <div class="front"><span>Front</span></div>
-                      <div class="back"><span>Back</span></div>
+                    <div class="card" id = "pj3">
+                      <div class="front">
+                        <h1>Scientific Research</h1>
+                        <h1>Numerical Integration and Numerical Methods for Solving Nonlinear Equations</h1>
+                      </div>
+
+                      <div class="back">
+                        <h1>Scientific Research</h1>
+                        <p>All algorithms are described in detail and implemented in the C # language, as well as testing of the algorithms for accuracy.</p>
+                        <a class="buttonpj"id = 'pj3demo' onclick="getRedirect(this.id)">View Demo</a>
+                        <a class="buttonpj"id = 'pj3code' onclick="getRedirect(this.id)">View Code</a>
+                      </div>
                     </div>
                    
+                   
                
-                   <div class="card">
-                      <div class="front"><span>Front</span></div>
-                      <div class="back"><span>Back</span></div>
-                    </div>
+              
                    
 
                 </section>
@@ -115,29 +128,28 @@
 
 
 
-    
+ 
+
     <div class="contact-area" id="contact">
         <div class="text-part">
-            <h1>Contact</h1>	
+            <h1 id = "header">Contact</h1>	
             
-		    <p>
-				No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+		    <p id ="text-content">
+
             </p>
 
-            <form  class="contact-form" action="contact.php">
-	        	<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-	        	<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-	        	<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+            <form  class="contact-form"   action="https://formspree.io/xdowyjvd" method="POST">
+
+	
+	        	<input type="email" id="c_email" class="form-control" name="_replyto" placeholder="Your e-mail">
+	        	<textarea class="form-control" id="c_message" name="message" rows="7" placeholder="Message"></textarea>
 	        	<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+            <label>  
 
-            </form>
-            <p>
-				No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
-            </p>
 	    </div>
     </div>
     
-
+   
 
      <script src = "app.js"></script>
 </body>
