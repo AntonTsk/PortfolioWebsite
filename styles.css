@@ -216,7 +216,9 @@ a:hover{
     height: 100%;
 }
 
-
+#about{
+    height: 100vh;
+}
 
 
 #header {
