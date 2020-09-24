@@ -29,7 +29,7 @@ function getRedirect(id) {
         "github": "https://github.com/TonyTskh",
         "linkedin": "https://www.linkedin.com/in/anton-tsk-109a491a8/",
         "google": "mailto:anton.tsk1@gmail.com",
-        "pj1demo": "https://repl.it/@tonytskh/Sorting-Visualization",
+        "pj1demo": "https://tonytskh.github.io/SortingVizualizer/",
         "pj1code": "https://github.com/TonyTskh/Sorting-Visualization-v2",
         "pj2demo": "https://simmer.io/@AntonTsk/flappy-neon",
         "pj2code": "https://github.com/TonyTskh/FlappyNeon",
