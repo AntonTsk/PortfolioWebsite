@@ -26,15 +26,15 @@ navSlide();
 
 function getRedirect(id) {
     var links = {
-        "github": "https://github.com/TonyTskh",
-        "linkedin": "https://www.linkedin.com/in/anton-tsk-109a491a8/",
+        "github": "https://github.com/AntonTsk",
+        "linkedin": "https://www.linkedin.com/in/anton-tskhovrebov-109a491a8/",
         "google": "mailto:anton.tsk1@gmail.com",
-        "pj1demo": "https://tonytskh.github.io/SortingVizualizer/",
-        "pj1code": "https://github.com/TonyTskh/Sorting-Visualization-v2",
+        "pj1demo": "https://AntonTsk.github.io/SortingVizualizer/",
+        "pj1code": "https://github.com/AntonTsk/Sorting-Visualization-v2",
         "pj2demo": "https://simmer.io/@AntonTsk/flappy-neon",
-        "pj2code": "https://github.com/TonyTskh/FlappyNeon",
-        "pj3demo": "https://github.com/TonyTskh/Numerical-integration/blob/master/Numerical%20methods%20ENG.pdf",
-        "pj3code": "https://github.com/TonyTskh/Numerical-integration",
+        "pj2code": "https://github.com/AntonTsk/FlappyNeon",
+        "pj3demo": "https://github.com/AntonTsk/Numerical-integration/blob/master/Numerical%20methods%20ENG.pdf",
+        "pj3code": "https://github.com/AntonTsk/Numerical-integration",
       };
     var win = window.open(links[id], '_blank');
     win.focus();

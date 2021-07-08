@@ -8,15 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Welcome</title>
 </head>
 <body>
-  <div id = "progressbar"></div>
-  <div id = "scrollPath"></div>
+
     <nav>
-        <div class="logo">Anton's Portfolio</div>
+        <div class="logo">Portfolio</div>
          <ul class="nav-links">
-             <li><a href="#home">Home</a></li>
              <li><a href="#about">About</a></li>
              <li><a href="#projects">Projects</a></li>
              <li><a href="#contact">Contact</a></li>
@@ -35,7 +34,7 @@
         <div class="text-part" id  = "bgarea">
           <h1>Hi</h1>
           <h1>I'm Anton</h1>
-          <h1>Software Engineer</h1>   
+
           <div class="container">
            <ul class="social">
              
@@ -65,7 +64,7 @@
         <div class="text-part">
             <h1 id = "header">About</h1>
             <p id ="text-content">
-              I want to make life easier for people around the world with new technologies and inventions.
+              I want to make life easier for people around the world with new technologies and inventions
            </p>
         </div>
     </div>
@@ -78,11 +77,11 @@
                
                    <div class="card" id = "pj1">
                       <div class="front">
-                        <h1>Sorting Visualization</h1>
+                        <h1>Sorting Algorithms <br>Visualization</h1>
                       </div>
 
                       <div class="back">
-                        <h1>Sorting Visualization</h1>
+                        <h1>Sorting Algorithms <br>Visualization</h1>
                         <p>Visualization of popular sorting algorithms.The project was created to visually show the operation of sorting algorithms, to compare the speed of the algorithms with large arrays. </p>
                         <a class="buttonpj"id = 'pj1demo' onclick="getRedirect(this.id)">View Demo</a>
                         <a class="buttonpj"id = 'pj1code' onclick="getRedirect(this.id)">View Code</a>
@@ -92,6 +91,7 @@
                
                     <div class="card" id = "pj2">
                       <div class="front">
+                        <h1>Mobile Game <br>"Flappy Neon"</h1>
                       </div>
 
                       <div class="back">
@@ -137,32 +137,15 @@
             <h1 id = "header">Contact</h1>	
             
 		    <p id ="text-content">
-
-            </p>
-
-            <form  class="contact-form"   action="https://formspree.io/xdowyjvd" method="POST">
-
-	
-	        	<input type="email" id="c_email" class="form-control" name="_replyto" placeholder="Your e-mail">
-	        	<textarea class="form-control" id="c_message" name="message" rows="7" placeholder="Message"></textarea>
-	        	<button type="submit" class="b" data-wow-delay=".3s">Send Message</button>
-            <label>  
-
+          e-mail: anton.tsk1@gmail.com<br>
+          phone: +1 669-301-6433
 	    </div>
     </div>
     
    
 
      <script src = "app.js"></script>
-     <script type="text/javascript">
-      let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-    let progressHeight = (window.pageYOffset/totalHeight)*100;
-    progress.style.height = progressHeight + "%";
-}
-
-     </script>
+   
 </body>
 
 </html>
