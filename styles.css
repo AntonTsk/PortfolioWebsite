@@ -6,8 +6,6 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
-
 
 }
 
@@ -16,6 +14,10 @@ html{
     scroll-behavior: smooth;
 }
 nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,7 +27,6 @@ nav{
 
 }
 .logo{
-    
     color: rgb(236, 235, 235);
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -69,14 +70,17 @@ nav{
 }
 
 @media screen and (max-width:768px){
-    body{
-       overflow-x: hidden;
-    }
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
     .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 5vh;
         background-color: rgb(34, 34, 34);
         display: flex;
         flex-direction: column;
