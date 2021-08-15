@@ -432,13 +432,12 @@ a:hover{
 /* Contact us Area */
 
 .contact-area{
-    padding-top: 8vh;
     display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
 
 }
 
