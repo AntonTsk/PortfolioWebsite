@@ -39,3 +39,19 @@ function getRedirect(id) {
     var win = window.open(links[id], '_blank');
     win.focus();
 }
+
+function copyButton() {
+
+    var dummyContent = "anton.tsk1@gmail.com";
+    var dummy = $('<textarea>').val(dummyContent).appendTo('body').select();
+    document.execCommand('copy');
+    $(dummy).remove();
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied";
+  }
+  
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }

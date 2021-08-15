@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Anton Porfolio</title>
+    <link rel = "icon" href = "https://image.flaticon.com/icons/png/512/2919/2919600.png" type = "image/x-icon">
+
 </head>
 <body>
 
     <nav>
-        <div class="logo">Portfolio</div>
          <ul class="nav-links">
-             <li><a href="#about">About</a></li>
-             <li><a href="#projects">Projects</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a href="#about">ABOUT</a></li>
+             <li><a href="#projects">PROJECTS</a></li>
+             <li><a href="#skills">SKILLS</a></li>
+             <li><a href="#contact">CONTACT</a></li>
              
          </ul>
          <div class="burger">
@@ -30,58 +33,47 @@
 
     
     
-    <div class="banner-area" id="home"> 
-        <div class="text-part">
-          <h1>Hi</h1>
-          <h1>I'm Anton</h1>
-
+    <div class="banner-area" id="home">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      
+        <div class="intro-elements">
+          <h1>HELLO, I'M ANTON</h1>
           <div class="container">
+
            <ul class="social">
-             
-             <li class="social__item github" id = 'github' onclick="getRedirect(this.id)">
-               <i class="fa fa-github"></i>
-             </li>
-
-             <li class="social__item linkedin" id = 'linkedin' onclick="getRedirect(this.id)">
-               <i class="fa fa-linkedin"></i>
-             </li>
-
-             <li class="social__item google"id = 'google' onclick="getRedirect(this.id)">
-               <i class="fa fa-google"></i>
-             </li>
-
+             <li class="social__item github" id = 'github' onclick="getRedirect(this.id)">GITHUB &nbsp<i class="fa fa-github"></i></li>
+             <li class="social__item linkedin" id = 'linkedin' onclick="getRedirect(this.id)">LINKEDIN &nbsp<i class="fa fa-linkedin"></i></li>
+             <li class="social__item google"id = 'google' onclick="getRedirect(this.id)">EMAIL &nbsp<i class="fa fa-google"></i></li>
            </ul>
-          </div>
-            
-
         </div>
-        
+      </div>
 
     </div>
 
     
     <div class="about-area" id="about"> 
-        <div class="text-part">
+      <div class="text-part">
             <h1 id = "header">About</h1>
             <p id ="text-content">
-              I want to make life easier for people around the world with new technologies and inventions
+              A motivated individual with in-depth knowledge of languages and development tools, 
+              seeking a position in a growth-oriented company where I can use my skills to the advantage of the company 
+              while having the scope to develop my own skills.
            </p>
-        </div>
+      </div>
     </div>
 
     <div class="projects-area" id="projects">
-        <div class="text-part">
-                <h1 id = "header">Projects</h1>
+      <div class="content">      
+      <h1 id = "header">Projects</h1>
                 <section class="portfolio">
-                
-               
                    <div class="card" id = "pj1">
                       <div class="front">
                         <h1>Sorting Algorithms <br>Visualization</h1>
                       </div>
 
                       <div class="back">
-                        <h1>Sorting Algorithms <br>Visualization</h1>
                         <p>Visualization of popular sorting algorithms.The project was created to visually show the operation of sorting algorithms, to compare the speed of the algorithms with large arrays. </p>
                         <a class="buttonpj"id = 'pj1demo' onclick="getRedirect(this.id)">View Demo</a>
                         <a class="buttonpj"id = 'pj1code' onclick="getRedirect(this.id)">View Code</a>
@@ -97,7 +89,6 @@
                       </div>
 
                       <div class="back">
-                        <h1>Scientific Research</h1>
                         <p> Scientific research on numerical integration and numerical methods for solving nonlinear equations. Algorithms described in detail and implemented in C # language.</p>
                         <a class="buttonpj"id = 'pj3demo' onclick="getRedirect(this.id)">View Demo</a>
                         <a class="buttonpj"id = 'pj3code' onclick="getRedirect(this.id)">View Code</a>
@@ -111,19 +102,20 @@
                       </div>
 
                       <div class="back">
-                        <h1>Mobile Game </h1><h1>"Flappy Neon"</h1>
                         <p>Thanks to this project, I learned the basics of developing games on unity, faced with problems of optimization and product testing.</p>
                         <a class="buttonpj"id = 'pj2demo' onclick="getRedirect(this.id)">View Demo</a>
                         <a class="buttonpj"id = 'pj2code' onclick="getRedirect(this.id)">View Code</a>
                       </div>
                     </div>
-              
-                   
-
-                </section>
-        </div>
+               </section>
+              </div> 
     </div>
 
+    
+ <div class="skills-area" id="skills"> 
+      <h1 id = "header">SKILLS</h1>
+    
+  </div>
 
 
 
@@ -131,16 +123,49 @@
  
 
     <div class="contact-area" id="contact">
-        <div class="text-part">
-            <h1 id = "header">Contact</h1>	
-            
-		    <p id ="text-content">
-          e-mail: anton.tsk1@gmail.com<br>
-          phone: +1 669-301-6433
-	    </div>
-    </div>
-    
-   
+
+        <h1 id = "header">Contact</h1>	 
+
+		    <div id ="text-content">
+
+        <p>
+          <i id = "email" class="fa fa-envelope" aria-hidden="true"></i>
+          &nbsp anton.tsk1@gmail.com &nbsp 
+          <button onclick="copyButton()" onmouseout="outFunc()" class="copy-button" >
+            <div class="tooltip">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy
+          </button>
+        </p>
+
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp +1 669-301-6433</p>
+        </div>  
+
+    </div>   
+
+
+    <div data-embed-src="https://kontactr.com/form/2aecca73e13ce1e">
+    </div><script src="https://d3vxmrleduyji.cloudfront.net/js/e.js"></script>
+
+
+
+    <footer class="footer-distributed">
+	<div class="footer-left">
+
+				<p>Made by Anton Tskhovrebov 2021</p>
+			</div>
+			<div class="footer-right">
+
+				<a id = 'google' onclick="getRedirect(this.id)"><i class="fa fa-google"></i></a>
+				<a id = 'linkedin' onclick="getRedirect(this.id)"><i class="fa fa-linkedin"></i></a>
+				<a id = 'github' onclick="getRedirect(this.id)"><i class="fa fa-github"></i></a>
+
+			</div>
+
+		
+
+		</footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
      <script src = "app.js"></script>
    

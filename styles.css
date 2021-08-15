@@ -5,8 +5,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -22,7 +21,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(34, 34, 34);
+    background-color: #15273A;
     
 
 }
@@ -35,7 +34,7 @@ nav{
 
 .nav-links{
     display: flex;
-    width: 30%;
+    width: 35%;
     justify-content: space-around;
 }
 .nav-links li{
@@ -63,7 +62,7 @@ nav{
 
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1366px){
     .nav-links{
         width: 60%;
     }
@@ -81,7 +80,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 5vh;
-        background-color: rgb(34, 34, 34);
+        background-color: #15273A;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -126,7 +125,7 @@ nav{
 
 
 a:hover{
-    color: rgb(255, 238, 0); 
+    color: #F8E9A1; 
 }
 
 
@@ -135,96 +134,57 @@ a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about-area, .projects-area, .work-area, .contact-area, .skills-area{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-   
-}
-
-#about{
-    height: 50vh;
-}
 
 
 #header {
     font-size: 50px;
+    text-transform: uppercase;
 }
 #text-content{
     font-size: 20px;
 }
-.text-part{
-    width: 65%;
-    height: 80%;
 
-}
+
+
+
+
+/*Banner Area */
 
 .banner-area{
-    margin-top: 15vh;
-    position: flex;
-    width: 100%;
-    height: 77vh;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+
 }
 
 
-.banner-area h1{
-    
-    font-size: 50px;
-    position: relative;
-    display: flex;
-}
-
-
-.banner-area h1{
-    
-    font-size: 50px;
-    
-}
-
-
-.container {
-    display: flex;
-
-  }
-
-  .social {
-   
+ .social {
+    color: #ffffff;
+    letter-spacing: 0;
+    margin: auto;
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 500px;
   }
 
   .social__item {
-    
-    width: 40px;
+    padding: 0%;
+    margin: 0%;
+    width: 150px;
     height: 40px;
-    border-radius: 30%;
-    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    border: 3px solid #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     font-size: 25px;
     transition: all 0.3s;
     cursor: pointer;
@@ -252,20 +212,48 @@ a:hover{
 
 
 
+/*About Area */
+
+.about-area{
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+
+}
 
 
 
+
+/*Projects Area */
+
+
+.projects-area{
+    padding-top: 8vh;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
 
 .portfolio {
     display: grid; 
-    grid-gap: 145px;
+    grid-gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
     
   }
 
   .card {
-    width: 40vh;
-    height: 60vh;
+    width: 30vh;
+    height: 50vh;
     position: relative;
     perspective: 1000px;
 
@@ -281,7 +269,7 @@ a:hover{
     align-items: center;
     transition: 1s;
     backface-visibility: hidden;
-    border-radius: 10%;
+    border-radius: 1%;
   } 
 
   .back {
@@ -292,11 +280,18 @@ a:hover{
 
 
 
+.card .back p{
+    width: 80%;
+}
+
+
+
 #pj1 .front{
     background-image: url(images/sorting.jpg);
     background-size: cover;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: start;
     color: white;
@@ -312,32 +307,17 @@ a:hover{
     padding: 0;
     flex-direction: column;
     border: 3px solid rgb(0, 0, 0);
-    
-}
-
-#pj1 .back p{
-    width: 80%;
     text-align:center;
-    font-family: 'Roboto Mono';
+
 }
-
-
- 
-#pj1 .back h1{
-    
-    text-align:center;
-    
-}
-
-
-
 
 
 #pj2 .front{
     background-image: url(images/flappyneon.jpg);
     background-size: cover;
     width: 100%;
-    font-size: 20px;  
+    font-size: 15px;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: start;
     border: 3px solid rgb(0, 0, 0);
@@ -348,29 +328,18 @@ a:hover{
     margin: 0;
     padding: 0;
     flex-direction: column;
-   
     border: 3px solid rgb(0, 0, 0);
 }
 
-#pj2 .back p{
-    width: 80%;
-    text-align:center;
-    margin: 30px;
-    font-family: 'Roboto Mono';
 
-}
-
-#pj2 .back h1{
-   
-    margin: 0;
-}
 
 
 #pj3 .front{
     background-image: url(images/math.jpg); 
     background-size: cover;
     width: 100%;
-    font-size: 20px;  
+    font-size: 15px;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: start;
     border-color: silver;
@@ -379,9 +348,7 @@ a:hover{
     color: white;
     
 }
-#pj3 .front h1{
-    text-align: center;
-}
+
 #pj3 .back {
     margin: 0;
     padding: 0;
@@ -389,17 +356,6 @@ a:hover{
     border: 3px solid rgb(0, 0, 0);
    
 }
-
-#pj3 .back p{
-    width: 80%;
-    text-align:center;
-    margin: 30px;
-    font-family: 'Roboto Mono';
-
-}
-
-
-
 
 
 
@@ -415,7 +371,7 @@ a:hover{
     color: #fff;
     padding: 10px 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 1%;
     overflow: hidden;
   }
   .buttonpj:before {
@@ -431,7 +387,7 @@ a:hover{
   .buttonpj:hover:before {
     animation: move-light 0.5s;
   }
-  
+
   @keyframes move-light {
     from {
       transform: translateX(-4em) skewX(-45deg);
@@ -445,9 +401,19 @@ a:hover{
 
 
 
-.contact-area{
-    height: 100vh;
-    flex-direction: row;
+/*Skills Area */
+
+
+.skills-area{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 90%;
+
 }
 
 
@@ -456,8 +422,200 @@ a:hover{
 
 
 
+
+
+
+
+
+
+
+/* Contact us Area */
+
+.contact-area{
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Area */
+
+
+  
+  .footer-distributed {
+    background-color: #15273A;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font:  14px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #15273A;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+
+
+
+
+
 @media screen and (max-width:768px){
 
+  .about-area, .projects-area, .skills-area, .contact-area{  width: 90%;
+  }
+    .banner-area h1{
+        text-align: center;
+    }
+    .social__item{
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .social{
+        display: flex;
+        color: #ffffff;
+        letter-spacing: 0;
+        margin: auto;
+        list-style: none;
+        padding: 0;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+  
+    .projects-area{
+        height: 100%;
+    }
     .card {
         width: 30vh;
         height: 50vh;
@@ -465,16 +623,7 @@ a:hover{
         perspective: 1000px;
     
       }
-    h1{
-        font-size: 20px;
-
-      }
-    p{
-        font-size: 10px;
-    }
-    a{
-        font-size: 10px;
-    }
+  
     @keyframes move-light {
         from {
           transform: translateX(-2em) skewX(-45deg);
@@ -485,12 +634,59 @@ a:hover{
       }
 
       
-    #header{
-        font-size: 35px;
-    }   
+ 
+}
 
-    #text-content{
-        font-size: 14px;
-    }   
+
+
+
+
+@media screen and (max-width:451px){
+
+  .about-area, .projects-area, .skills-area, .contact-area{  width: 90%;    text-align: center;
+
+  }
+  .banner-area h1{
+      text-align: center;
+  }
+  .social__item{
+      width: 70px;
+      height: 30px;
+      font-size: 15px;
+      
+  }
+  .social{
+      display: flex;
+      color: #ffffff;
+      letter-spacing: 0;
+      margin: auto;
+      list-style: none;
+      padding: 0;
+      justify-content: space-between;
+      width: 250px;
+  }
+
+
+  .projects-area{
+      height: 100%;
+  }
+  .card {
+      width: 30vh;
+      height: 50vh;
+      position: relative;
+      perspective: 1000px;
+  
+    }
+
+  @keyframes move-light {
+      from {
+        transform: translateX(-2em) skewX(-45deg);
+      }
+      to {
+        transform: translateX(15em) skewX(-45deg);
+      }
+    }
+
     
+
 }
