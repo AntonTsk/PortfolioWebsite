@@ -5,7 +5,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-font-family: 'Courier Prime', monospace;
+    font-family: 'Courier Prime', monospace;
 }
 
 
@@ -49,6 +49,7 @@ nav{
 .burger{
     display: none;
     cursor: pointer;
+    padding-left: 80%;
 }
 
 .burger div{
@@ -76,13 +77,13 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 20vh;
         top: 5vh;
         background-color: #15273A;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -180,7 +181,7 @@ a:hover{
     margin: 0%;
     width: 50px;
     height: 40px;
-    border-radius: 5%;
+    border-radius: 10%;
     border: 3px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -219,186 +220,84 @@ a:hover{
     display: flex;
     flex-direction: column;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    width: 50%;
+    min-height: 100vh;
+    width: 60%;
 
 }
 
-
+.about-area p {
+  margin-top: 2em;
+}
 
 
 /*Projects Area */
 
-
 .projects-area{
-    padding-top: 8vh;
-    min-height: 100vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 50%;
+  padding-top: 8vh;
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.portfolio {
-    display: grid; 
-    grid-gap: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-    
-  }
-
-  .card {
-    width: 30vh;
-    height: 50vh;
-    position: relative;
-    perspective: 1000px;
-
-  }
-  .front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+.projects {
+  padding: 97px 0;
+}
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:1000px){
+  .project-cards {
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: 1s;
-    backface-visibility: hidden;
-    border-radius: 1%;
-  } 
-
-  .back {
-    transform: rotateY(180deg);
+    flex-wrap: wrap;
   }
-  .card:hover .front {transform: rotateY(180deg);}
-  .card:hover .back {transform: rotateY(360deg);}
-
-
-
-.card .back p{
-    width: 80%;
 }
-
-
-
-#pj1 .front{
-    background-image: url(images/sorting.jpg);
-    background-size: cover;
-    width: 100%;
-    font-size: 15px;
-    text-transform: uppercase;
-    flex-direction: column;
-    justify-content: start;
-    color: white;
-    border: 3px solid rgb(0, 0, 0);
-    text-align:center;
-
-    
-    
-}
-
-#pj1 .back {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    border: 3px solid rgb(0, 0, 0);
-    text-align:center;
+.project-card {
+  min-height: 370px;
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  cursor: pointer  
 
 }
-
-
-#pj2 .front{
-    background-image: url(images/flappyneon.jpg);
-    background-size: cover;
-    width: 100%;
-    font-size: 15px;
-    text-transform: uppercase;
-    flex-direction: column;
-    justify-content: start;
-    border: 3px solid rgb(0, 0, 0);
-    color: white;
+.progect-card__image {
+  height: 300px;
 }
-
-#pj2 .back {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    border: 3px solid rgb(0, 0, 0);
+.project1 {
+  background: url('images/sorting.jpg') center no-repeat;
+  background-size: cover;
 }
-
-
-
-
-#pj3 .front{
-    background-image: url(images/math.jpg); 
-    background-size: cover;
-    width: 100%;
-    font-size: 15px;
-    text-transform: uppercase;
-    flex-direction: column;
-    justify-content: start;
-    border-color: silver;
-    border: 3px solid rgb(0, 0, 0);
-    
-    color: white;
-    
+.project2 {
+  background: url('images/math.jpg') center no-repeat;
+  background-size: cover;
 }
-
-#pj3 .back {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    border: 3px solid rgb(0, 0, 0);
-   
+.project3 {
+  background: url('images/flappyneon.jpg') center no-repeat;
+  background-size: cover;
 }
-
-
-
-.buttonpj{
-    width: 100px;
-    text-align:center;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    background-color: coral;
-   
-    color: #fff;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 1%;
-    overflow: hidden;
-  }
-  .buttonpj:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.5em;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    transform: translateX(-4em) skewX(-45deg);
-  }
-  .buttonpj:hover:before {
-    animation: move-light 0.5s;
-  }
-
-  @keyframes move-light {
-    from {
-      transform: translateX(-4em) skewX(-45deg);
-    }
-    to {
-      transform: translateX(10em) skewX(-45deg);
-    }
-  }
-  
-
-
+.project-card__info {
+  padding: 19px 13px;
+}
+.project-category {
+  display: block;
+  font-size: 12px;
+  color: #2b2a2c;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
 
 
 /*Skills Area */
@@ -430,7 +329,9 @@ a:hover{
 
 
 /* Contact us Area */
-
+.GZ16290594544yT_submit{
+  background-color: #2a9abc;
+}
 .contact-area{
     display: flex;
     flex-direction: column;
@@ -496,11 +397,11 @@ a:hover{
   
   .footer-distributed {
     background-color: #15273A;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font:  14px;
+    font: 14px;
     padding: 30px;
     justify-content: center;
     align-items: center;
@@ -512,6 +413,7 @@ a:hover{
     color: #8f9296;
     font-size: 14px;
     margin: 0;
+
   }
   /* Footer links */
   
@@ -591,7 +493,7 @@ a:hover{
 
 @media screen and (max-width:768px){
 
-  .about-area, .projects-area, .skills-area, .contact-area{  width: 90%;
+  .about-area, .skills-area, .contact-area{  width: 90%;
   }
     .banner-area h1{
         text-align: center;
@@ -613,9 +515,7 @@ a:hover{
     }
 
   
-    .projects-area{
-        height: 100%;
-    }
+  
     .card {
         width: 30vh;
         height: 50vh;
@@ -643,7 +543,7 @@ a:hover{
 
 @media screen and (max-width:451px){
 
-  .about-area, .projects-area, .skills-area, .contact-area{  width: 90%;    text-align: center;
+  .about-area, .skills-area, .contact-area{  width: 90%;    text-align: center;
 
   }
   .banner-area h1{
@@ -667,9 +567,7 @@ a:hover{
   }
 
 
-  .projects-area{
-      height: 100%;
-  }
+  
   .card {
       width: 30vh;
       height: 50vh;

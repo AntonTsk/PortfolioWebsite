@@ -64,53 +64,73 @@
       </div>
     </div>
 
-    <div class="projects-area" id="projects">
-      <div class="content">      
-      <h1 id = "header">Projects</h1>
-                <section class="portfolio">
-                   <div class="card" id = "pj1">
-                      <div class="front">
-                        <h1>Sorting Algorithms <br>Visualization</h1>
-                      </div>
-
-                      <div class="back">
-                        <p>Visualization of popular sorting algorithms.The project was created to visually show the operation of sorting algorithms, to compare the speed of the algorithms with large arrays. </p>
-                        <a class="buttonpj"id = 'pj1demo' onclick="getRedirect(this.id)">View Demo</a>
-                        <a class="buttonpj"id = 'pj1code' onclick="getRedirect(this.id)">View Code</a>
-                      </div>
-                    </div>
-          
-               
-                   
-               
-                    <div class="card" id = "pj3">
-                      <div class="front">
-                        <h1>Scientific Research</h1>
-                      </div>
-
-                      <div class="back">
-                        <p> Scientific research on numerical integration and numerical methods for solving nonlinear equations. Algorithms described in detail and implemented in C # language.</p>
-                        <a class="buttonpj"id = 'pj3demo' onclick="getRedirect(this.id)">View Demo</a>
-                        <a class="buttonpj"id = 'pj3code' onclick="getRedirect(this.id)">View Code</a>
-                      </div>
-                    </div>
-                   
-                   
-                    <div class="card" id = "pj2">
-                      <div class="front">
-                        <h1>Mobile Game <br>"Flappy Neon"</h1>
-                      </div>
-
-                      <div class="back">
-                        <p>Thanks to this project, I learned the basics of developing games on unity, faced with problems of optimization and product testing.</p>
-                        <a class="buttonpj"id = 'pj2demo' onclick="getRedirect(this.id)">View Demo</a>
-                        <a class="buttonpj"id = 'pj2code' onclick="getRedirect(this.id)">View Code</a>
-                      </div>
-                    </div>
-               </section>
-              </div> 
-    </div>
-
+   
+         <!-- Projects section -->
+         <div class="projects-area" id="projects">
+          <h1 id = "header">Projects</h1>
+          <section class="projects">
+            <div class="container">
+              <div class="project-cards">
+                
+                <div class="project-card" id = 'pj1code' onclick="getRedirect(this.id)">
+                  <div class="progect-card__image project1"></div>
+                  <div class="project-card__info">
+                    <span class="project-category">
+                    Python | JavaScript | HTML | CSS
+                    </span>
+                    <strong class="project-title">
+                      <span class="project-name">
+                        SORTING VISUALIZER
+                      </span>
+                      <span class="project-date">
+                        2019
+                      </span>
+                    </strong>
+                  </div>
+                </div>
+                
+                <div class="project-card" id = 'pj3code' onclick="getRedirect(this.id)">
+                  <div class="progect-card__image project2"></div>
+                  <div class="project-card__info">
+                    <span class="project-category">
+                      Research
+                    </span>
+                    <strong class="project-title">
+                      <span class="project-name">
+                       SCIENTIFIC RESEARCH
+                      </span>
+                      <span class="project-date">
+                        2018
+                      </span>
+                    </strong>
+                  </div>
+                </div>
+                
+                <div  class="project-card" id = 'pj2code' onclick= "getRedirect(this.id)">
+                  <div class="progect-card__image project3"></div>
+                  <div class="project-card__info">
+                    <span class="project-category">
+                    C# | Unity | Adobe Photophop
+                    </span>
+                    <strong class="project-title">
+                      <span class="project-name">
+                        MOBILE VIDEOGAME                      
+                      </span>
+                      <span class="project-date">
+                        2020
+                      </span>
+                    </strong>
+                  </div>
+                </div>
+                
+              
+                
+              </div>
+            </div>
+          </section>
+        </div>
+    <!-- end Projects section -->
+    
     
 
 
@@ -142,7 +162,7 @@
     </div>   
 
     <footer class="footer-distributed">
-	<div class="footer-left">
+	    <div class="footer-left">
 
 				<p>Made by Anton Tskhovrebov 2021</p>
 			</div>
