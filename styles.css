@@ -5,7 +5,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+font-family: 'Courier Prime', monospace;
 }
 
 
@@ -19,7 +19,8 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #15273A;
-    
+    font-family: 'Montserrat', sans-serif;   
+
 
 }
 .logo{
@@ -135,6 +136,7 @@ a:hover{
 
 #header {
     font-size: 50px;
+    font-family: 'Montserrat', sans-serif;   
     text-transform: uppercase;
 }
 #text-content{
@@ -153,8 +155,9 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 40px;
+    text-align: center;
     letter-spacing: 0.1em;
     color: #ffffff;
 
@@ -175,7 +178,7 @@ a:hover{
   .social__item {
     padding: 0%;
     margin: 0%;
-    width: 150px;
+    width: 50px;
     height: 40px;
     border-radius: 5%;
     border: 3px solid #ffffff;
@@ -596,7 +599,7 @@ a:hover{
     .social__item{
         width: 100px;
         height: 40px;
-        font-size: 20px;
+        font-size: 25px;
     }
     .social{
         display: flex;
@@ -648,8 +651,8 @@ a:hover{
   }
   .social__item{
       width: 70px;
-      height: 30px;
-      font-size: 15px;
+      height: 40px;
+      font-size: 20px;
       
   }
   .social{
