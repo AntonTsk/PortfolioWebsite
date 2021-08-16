@@ -124,7 +124,7 @@ nav{
 
 
 a:hover{
-    color: #F8E9A1; 
+    color: #F9C74F; 
 }
 
 
@@ -151,8 +151,11 @@ a:hover{
 /*Banner Area */
 
 .banner-area{
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-    height: 100vh;
+background: #34e89e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +219,6 @@ a:hover{
 /*About Area */
 
 .about-area{
-    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -224,27 +226,34 @@ a:hover{
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    width: 60%;
 
 }
 
 .about-area p {
   margin-top: 2em;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+
 }
 
 
 /*Projects Area */
 
 .projects-area{
+  min-height: 100vh;
   padding-top: 8vh;
   text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .projects {
   padding: 97px 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .project-cards {
   display: flex;
@@ -329,9 +338,7 @@ a:hover{
 
 
 /* Contact us Area */
-._Forms_generate input[type=submit], a.g-recaptcha-continue, .accept-agree{
-  background: #2583ba;
-}
+
 .contact-area{
     display: flex;
     flex-direction: column;
@@ -493,7 +500,7 @@ a:hover{
 
 @media screen and (max-width:768px){
 
-  .about-area, .skills-area, .contact-area{  width: 90%;
+  .about-area p, .contact-area{  width: 90%;
   }
     .banner-area h1{
         text-align: center;
