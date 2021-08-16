@@ -329,8 +329,8 @@ a:hover{
 
 
 /* Contact us Area */
-.GZ16290594544yT_submit{
-  background-color: #2a9abc;
+._Forms_generate input[type=submit], a.g-recaptcha-continue, .accept-agree{
+  background: #2583ba;
 }
 .contact-area{
     display: flex;
