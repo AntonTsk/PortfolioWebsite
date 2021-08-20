@@ -18,6 +18,17 @@
 <body>
 
     <nav>
+      <div class="logo">
+      <div class="avatar"></div>
+      <div class="description">
+        <span class="name">
+          Anton Tskhovrebov
+        </span>
+        <small class="description_small">
+          QA Engineer | Front-end Devoloper
+        </small>
+      </div>
+    </div>
          <ul class="nav-links">
              <li><a href="#about">ABOUT</a></li>
              <li><a href="#projects">PROJECTS</a></li>
@@ -33,24 +44,33 @@
 
     
     
-    <div class="banner-area" id="home">
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
-      
-        <div class="intro-elements">
-          <h1>HELLO, I'M ANTON</h1>
-          <div class="container">
+      <section class="hero">
+        <div class="container">
+            <span class="hero-subtitle">
+              Hi, my name is
+            </span>
+            <h1 class="hero-title">
+              Anton Tskhovrebov
+            </h1>
+            <small class="hero-description">
+              I am testing and developing software products
+            </small>
 
-           <ul class="social">
-             <li class="social__item github" id = 'github' onclick="getRedirect(this.id)"><i class="fa fa-github"></i></li>
-             <li class="social__item linkedin" id = 'linkedin' onclick="getRedirect(this.id)"><i class="fa fa-linkedin"></i></li>
-             <li class="social__item google"id = 'google' onclick="getRedirect(this.id)"><i class="fa fa-google"></i></li>
-           </ul>
+            <div class="hero-social">
+            	<a style="background-color: brown;" id = 'google' onclick="getRedirect(this.id)"><i class="fa fa-google"></i></a>
+			      	<a style="background-color: dodgerblue;" id = 'linkedin' onclick="getRedirect(this.id)"><i class="fa fa-linkedin"></i></a>
+				      <a style="background-color: darkslateblue;" id = 'github' onclick="getRedirect(this.id)"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="button button-primary">Write me a message</a>
+              <a href="images/Anton Tskhovrebov Resume.pdf"  target="_blank"class="button button-o">My resume</a>
+            </div>
+          
         </div>
-      </div>
+      </section>
 
-    </div>
+    
 
     
     <div class="about-area" id="about"> 

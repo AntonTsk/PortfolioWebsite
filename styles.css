@@ -10,7 +10,6 @@ body{
 
 
 nav{
-    position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
@@ -18,28 +17,49 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #15273A;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;   
 
 
 }
 .logo{
-    color: rgb(236, 235, 235);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
 }
+
+.description {
+  margin-left: 9px;
+}
+.name {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  
+}
+
+.avatar {
+  min-width: 57px;
+  min-height: 57px;
+  background: url('https://media-exp1.licdn.com/dms/image/C5603AQG5XhdyDUijdg/profile-displayphoto-shrink_200_200/0/1596074911446?e=1634774400&v=beta&t=jtTULtiAT61tIkgSV-Vq0OzEz96Hahn6l_T4JEGqZAo');
+  border-radius: 50%;
+  background-size: 100%;
+  background-position: center 25%;
+}
+
 
 .nav-links{
     display: flex;
     width: 35%;
     justify-content: space-around;
+    
 }
 .nav-links li{
     list-style: none; /*Remove bullet points*/
 }
 .nav-links a{
-    color: rgb(236, 235, 235);
+    color: rgb(36, 36, 36);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -49,13 +69,12 @@ nav{
 .burger{
     display: none;
     cursor: pointer;
-    padding-left: 80%;
 }
 
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: rgb(236, 235, 235);
+    background-color: rgb(58, 58, 58);
     margin: 5px;
     transition: all 0.3s ease;
 
@@ -79,7 +98,7 @@ nav{
         right: 0px;
         height: 20vh;
         top: 5vh;
-        background-color: #15273A;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -145,72 +164,89 @@ a:hover{
 }
 
 
-
-
-
 /*Banner Area */
 
-.banner-area{
-background: #34e89e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.hero {
+  font-family: 'Montserrat', sans-serif;   
+  padding-top: 20vh;
+  padding-bottom: 110px;
+  background: url('images/test.jpg') no-repeat right bottom;
+  background-size: 50%;
+  background-position-y: 60%;
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+@media screen and (max-width:920px){
+ .hero{
+  background: white
+ }
+}
 
-      height: 100vh;
-    display: flex;
+.hero-subtitle {
+  font-size: 32px;
+}
+.hero-title {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hero-description {
+  font-size: 18px;
+  color: #6a696b;
+}
+.hero-social {
+margin-top: 15px;
+}
+.hero-social a{
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
     justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;   
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 0.1em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 25px;
     color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+    transition:all .25s;
 
+}
+.hero-social a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.hero-buttons {
+  margin-top: 40px;
+}
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  background: #2b2a2c;
+  border-radius: 50px;
+  padding: 20px 34px;
+  display: inline-block;
+  color: #fff;
+  transition: .5s;
+}
+.button:hover {
+  background: #3a5898;
+  color: #fff;
+}
+.button-o {
+  background: transparent;
+  color: #6a696b;
+  border: 1px solid #6a696b;
+}
+.button-primary {
+  margin-right: 17px;
+  margin-bottom: 10px;
 }
 
 
- .social {
-    color: #ffffff;
-    letter-spacing: 0;
-    margin: auto;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-  }
 
-  .social__item {
-    padding: 0%;
-    margin: 0%;
-    width: 50px;
-    height: 40px;
-    border-radius: 10%;
-    border: 3px solid #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    font-size: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-  
-  .linkedin:hover {
-    border-color: #00aced;
-    box-shadow: 0px 0px 20px #00aced;
-    color: #00aced;
-  }
-  
-  .github:hover {
-    border-color: #bc2a8d;
-    box-shadow: 0px 0px 20px #bc2a8d;
-    color: #bc2a8d;
-  }
 
-  .google:hover {
-    border-color: #dd4b39;
-    box-shadow: 0px 0px 20px #dd4b39;
-    color: #dd4b39;
-  }
 
 
 
@@ -242,7 +278,6 @@ background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, F
 /*Projects Area */
 
 .projects-area{
-  min-height: 100vh;
   padding-top: 8vh;
   text-align: center;
 
@@ -388,8 +423,35 @@ background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, F
   opacity: 1;
 }
 
+.contact-area input{ 
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    background: #2b2a2c;
+    border-radius: 50px;
+    padding: 20px 34px;
+    display: inline-block;
+    color: #fff;
+    transition: .5s;
+  }
+.contact-area input:hover {
+    background: #3a5898;
+    color: #fff;
+  }
 
 
+.contact-area button{
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 50px;
+    padding: 5px 12px;
+    display: inline-block;
+    color: #6a696b;
+    transition: .5s;
+    border: 1px solid #6a696b;
+  }
 
 
 
@@ -502,26 +564,7 @@ background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, F
 
   .about-area p, .contact-area{  width: 90%;
   }
-    .banner-area h1{
-        text-align: center;
-    }
-    .social__item{
-        width: 100px;
-        height: 40px;
-        font-size: 25px;
-    }
-    .social{
-        display: flex;
-        color: #ffffff;
-        letter-spacing: 0;
-        margin: auto;
-        list-style: none;
-        padding: 0;
-        justify-content: space-between;
-        width: 350px;
-    }
 
-  
   
     .card {
         width: 30vh;
@@ -553,26 +596,6 @@ background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, F
   .about-area, .skills-area, .contact-area{  width: 90%;    text-align: center;
 
   }
-  .banner-area h1{
-      text-align: center;
-  }
-  .social__item{
-      width: 70px;
-      height: 40px;
-      font-size: 20px;
-      
-  }
-  .social{
-      display: flex;
-      color: #ffffff;
-      letter-spacing: 0;
-      margin: auto;
-      list-style: none;
-      padding: 0;
-      justify-content: space-between;
-      width: 250px;
-  }
-
 
   
   .card {
