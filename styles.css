@@ -423,36 +423,6 @@ margin-top: 15px;
   opacity: 1;
 }
 
-.buttonsend{ 
-    font-size: 16px;
-    font-weight: 800;
-    text-decoration: none;
-    background: #2b2a2c;
-    border-radius: 50px;
-    padding: 20px 34px;
-    display: inline-block;
-    color: #fff;
-    transition: .5s;
-  }
-.buttonsend:hover {
-    background: #3a5898;
-    color: #fff;
-  }
-
-
-.contact-area button{
-    font-size: 15px;
-    font-weight: 800;
-    text-decoration: none;
-    background: transparent;
-    border-radius: 50px;
-    padding: 5px 12px;
-    display: inline-block;
-    color: #6a696b;
-    transition: .5s;
-    border: 1px solid #6a696b;
-  }
-
 
 
 
